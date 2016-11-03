@@ -9,6 +9,6 @@ public class FibonacciApplication {
 
     public static void main(String[] args) {
         FibonacciCalculator calculator = new TimedFibonacciCalculator(new FibonacciCalculatorImpl());
-        LOG.info("10th fibonacci number : {}", calculator.calculate(10));
+        LOG.info("10th fibonacci number : {}", calculator.calculate(25));
     }
 }
