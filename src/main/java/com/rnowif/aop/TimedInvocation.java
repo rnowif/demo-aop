@@ -9,7 +9,7 @@ public class TimedInvocation {
 
     private static final Logger LOG = LoggerFactory.getLogger(TimedInvocation.class);
 
-    public <T> T invoke(InvocationPoint<T> invocationPoint) {
+    public <T> T invoke(InvocationPoint<T> invocationPoint) throws Exception {
         StopWatch watch = new StopWatch(Clock.systemDefaultZone());
         watch.start();
         LOG.info("Start calculation");

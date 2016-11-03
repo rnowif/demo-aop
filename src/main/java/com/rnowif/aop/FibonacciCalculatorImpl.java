@@ -4,6 +4,7 @@ package com.rnowif.aop;
 public class FibonacciCalculatorImpl implements FibonacciCalculator {
 
     @Override
+    @Timed
     public int calculate(int n) {
         int result = n;
         if (n > 1) {
